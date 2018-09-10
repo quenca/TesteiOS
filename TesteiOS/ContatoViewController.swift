@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  TesteiOS
 //
 //  Created by Gustavo Quenca on 09/09/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ContatoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
