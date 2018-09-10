@@ -24,4 +24,9 @@ class InfoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(for result: Info) {
+        nameLabel.text = result.name
+        dataLabel.text = result.data
+    }
+    
 }
