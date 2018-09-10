@@ -16,6 +16,7 @@
 		CDC425C92145E8AA004F77A2 /* TesteiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC425C82145E8AA004F77A2 /* TesteiOSTests.swift */; };
 		CDC425D42145E8AA004F77A2 /* TesteiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC425D32145E8AA004F77A2 /* TesteiOSUITests.swift */; };
 		CDC425E221460480004F77A2 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC425E121460480004F77A2 /* Screen.swift */; };
+		CDC425E421460573004F77A2 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC425E321460573004F77A2 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CDC425D32145E8AA004F77A2 /* TesteiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteiOSUITests.swift; sourceTree = "<group>"; };
 		CDC425D52145E8AA004F77A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC425E121460480004F77A2 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		CDC425E321460573004F77A2 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				CDC425BC2145E8AA004F77A2 /* LaunchScreen.storyboard */,
 				CDC425BF2145E8AA004F77A2 /* Info.plist */,
 				CDC425E121460480004F77A2 /* Screen.swift */,
+				CDC425E321460573004F77A2 /* DataSource.swift */,
 			);
 			path = TesteiOS;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				CDC425B62145E8A8004F77A2 /* ContatoViewController.swift in Sources */,
 				CDC425B22145E8A8004F77A2 /* AppDelegate.swift in Sources */,
 				CDC425B42145E8A8004F77A2 /* InvestimentoViewController.swift in Sources */,
+				CDC425E421460573004F77A2 /* DataSource.swift in Sources */,
 				CDC425E221460480004F77A2 /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

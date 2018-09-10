@@ -25,18 +25,40 @@ class InvestimentoViewController: UIViewController {
     @IBOutlet weak var fundALabel: UILabel!
     @IBOutlet weak var fundDozeLabel: UILabel!
     
-    
+    var dataSource = DataSource()
+    var screen: Screen? {
+        didSet {
+            //  numberOfRows = 1
+            tableView.reloadData()
+        }
+    }
+    var numberOfRows = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        dataSource.getJSON { (didSucceed) in
+            if case let .results(screen) = self.dataSource.state {
+                self.screen = screen
+                self.titleLabel.text = self.screen?.title
+                self.funNameLabel.text = self.screen?.fundName
+                self.oQueELabel.text = self.screen?.whatIs
+                self.definitionLabel.text = self.screen?.definition
+                self.riskTitleLabel.text = self.screen?.riskTitle
+                self.infoTitleLabel.text = self.screen?.infoTitle
+                self.cdMLabel.text = String(format: "%.1f",(self.screen?.moreInfo.month.cdi)!)
+                self.cdALabel.text = String(format: "%.1f", (self.screen?.moreInfo.year.cdi)!)
+                self.cdDozeLabel.text = String(format: "%.1f", (self.screen?.moreInfo.twelveMonths.cdi)!)
+                self.fundMLabel.text = String(format: "%.1f", (self.screen?.moreInfo.month.fund)!)
+                self.fundALabel.text = String(format: "%.1f", (self.screen?.moreInfo.year.fund)!)
+                self.fundDozeLabel.text = String(format: "%.1f", (self.screen?.moreInfo.twelveMonths.fund)!)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
